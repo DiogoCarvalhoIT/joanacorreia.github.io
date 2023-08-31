@@ -1,0 +1,864 @@
+
+@font-face {
+    font-family: 'customFont1'; /*a name to be used later*/
+    src: url('YsabeauInfant-Thin.ttf'); /*URL to font*/
+  }
+
+/*----------------------------------*/
+/*--------------Nav-Bar-------------*/
+/*----------------------------------*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: 100px;
+    z-index: 100;
+    /*box-shadow: 0px 5px 20px black;*/
+    font-size: 20px;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: black;
+    font-family: customFont1;
+  }
+
+  .reveal{
+    transform: translateY(150px);
+    opacity: 0;
+    position: relative;
+    transition: all 2s ease;
+  }
+
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .links {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    gap: 50px;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  .capa-inicial {
+    height: 600px;
+    width: 100%;
+    background-color: blue;
+    display:flex;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;  
+  }
+
+
+  #backgroundPersonImage {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .capa-inicial h1 {
+    z-index: 1;
+    position: absolute;
+  }
+
+  .separador-1 {
+    height: 10px;
+    background-color: white;
+    display:flex;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+
+
+
+
+  .dropdown-performer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    opacity: 0; /* Add this line */
+    transform: translateX(-10px); /* Add this line */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add this line */
+    flex-direction:column; /* Add this line */
+    align-items: flex-start; /* Add this line */
+    background-color: black;
+  }
+  
+  .dropdown-performer.active {
+    opacity: 1; /* Add this line */
+    transform: translateY(0px); /* Add this line */
+  }
+  
+  .dropdown:hover .dropdown-performer.active {
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-performer {
+    
+    animation: dropdown-appear 1s ease forwards; /* Add these lines */
+  }
+  
+  @keyframes dropdown-appear {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+
+
+  .dropdown-aulas {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    opacity: 0; /* Add this line */
+    transform: translateX(-10px); /* Add this line */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add this line */
+    flex-direction:column; /* Add this line */
+    align-items: flex-start; /* Add this line */
+    background-color: black;
+  }
+  
+  .dropdown-aulas.active {
+    opacity: 1; /* Add this line */
+    transform: translateY(0px); /* Add this line */
+  }
+  
+  .dropdown2:hover .dropdown-aulas.active {
+    display: block;
+    
+  }
+  
+  .dropdown2:hover .dropdown-aulas {
+    
+    animation: dropdown-appear 1s ease forwards; /* Add these lines */
+  }
+  
+  @keyframes dropdown-appear {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+
+  
+
+/*------------------------------------------------------------*/
+  /* Sobre */
+  /*------------------------------------------------------------*/
+
+  .sobreSection {
+    height: 900px;
+    background-color: white;
+    display: grid;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 100px;
+    position: relative;
+    color: black;
+  }
+
+  .sobreSection h1 {
+    text-align: center;
+    font-size: 75px;
+    margin-top: 2.5%;
+    font-weight: 100;
+  }
+
+  .gridSobre { 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.gridSobre > div {
+  flex: 1;
+  height: 550px;
+  width: 650px;
+  margin-bottom: 40%;
+}
+
+#imagemInicial{
+  background-image: url('ImagemDisplay1v3.jpeg');
+  background-size: cover;
+  box-shadow: 0px 0px 20px 5px black;
+}
+
+#tituloInfoCurso{
+  color: black;
+}
+
+#textoInfoCurso{
+  font-size: 19px;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-weight: bold;
+}
+
+  /*------------------------------------------------------------*/
+  /* Discografia e Eventos */
+  /*------------------------------------------------------------*/
+
+  .discEvents {
+    height: 100%;
+    background-color: black;
+    display: grid;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /*margin-top: 100px;*/
+    position: relative;
+    color: white;
+  }
+  
+  .discEvents h1 {
+    /*color: white;*/
+    text-align: center;
+    font-size: 75px;
+    margin-top: 1.5%;
+    font-weight: 100;
+  }
+
+  /*.gridDiscEvents { 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gridDiscEvents > div {
+  flex: 1;
+  height: 300px; 
+  width: 600px;
+  margin-bottom: 40%;
+  
+}
+
+#discografia{
+  border-right: solid white;
+  border-right-width: 1px;
+}
+
+#eventos{
+  border-left: solid white;
+  border-left-width: 1px;
+}
+
+#textoDiscografia{
+  font-size: 25px;
+  text-align: start;
+}*/
+
+#textoEventos{
+    font-size: 1.5rem;
+    width: 70%;
+    margin-left: 10%;
+    align-items: center;
+    
+    align-content: center;
+}
+
+.textoEventos{
+  color: white;
+  text-align: left;
+}
+
+.aHref{
+  color: white;
+  text-decoration: none;
+}
+
+.aHref:hover{
+  text-decoration:underline;
+}
+
+#tituloGridDiscEvents{
+  font-size: 35px;
+  font-weight: bold;
+}
+  /*------------------------------------------------------------*/
+  /* DISCOGRAFIA */
+  /*------------------------------------------------------------*/
+
+
+  .discDisc {
+    height: 100%;
+    background-color: white;
+    display: grid;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: relative;
+    color: black;
+  }
+  
+  .discDisc h1 {
+    /*color: white;*/
+    text-align: center;
+    font-size: 75px;
+    margin-top: 1.5%;
+    font-weight: 100;
+  }
+
+
+#textoDisc{
+    font-size: 1.5rem;
+    width: 100%;
+   
+    align-items: center;
+    align-content: center;
+    
+
+}
+
+.textoDisc{
+  color: black;
+  text-align: left;
+  
+}
+
+.aHref{
+  color: black;
+  text-decoration: none;
+}
+
+.aHref:hover{
+  text-decoration:underline;
+}
+
+
+  /*------------------------------------------------------------*/
+  /* FOTOS */
+  /*------------------------------------------------------------*/
+
+  .fotos-videos {
+    height: 1200px;
+    background-color: black;
+    display: grid;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    color: white;
+  }
+
+  .fotos-videos h1 {
+    text-align: center;
+    font-size: 75px;
+    font-weight: 100;
+    margin-top: -0%;
+  }
+
+  .sobre{
+    background-color: black;
+  }
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  .image-box {
+    width: 400px;
+    height: 400px;
+    margin: 0 20px;
+    box-shadow: 0px 0px 10px 1px white;
+    margin-bottom: 100px;
+  }
+
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image fills the box while maintaining its aspect ratio */
+  }
+
+
+  .image-box1 {
+    width: 500px;
+    height: 500px;
+    margin: 0 20px;
+    box-shadow: 5px 10px 15px black;
+    margin-bottom: 100px;
+  }
+
+  /*=============================*/
+/* ===== FORM DE CONTACTOS ====*/
+/*=============================*/
+
+.contactosFormContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    height: 230px; 
+  }
+  
+  input {
+    width: 50%; 
+    padding: 10px;
+    height: 40px;
+    font-size: 1rem; 
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    font-family: customFont1;
+    
+  }
+  
+  #boxMessage {
+    width: 250px;
+    padding: 10px;
+    height: 190px;
+    font-size: 1rem; 
+    text-align: center;
+    margin-top: -122px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    font-family: customFont1;
+    justify-content: left;
+    margin-left: 190px;
+    font-size: 20px;
+    line-height: 20px;
+    
+  }
+  
+
+  #botaoSubmeter {
+    color: white;
+    width: 150px;
+    height: 50px;
+    margin-left: 300px;
+    background-color: black;
+    font-family: customFont1;
+    border: 2px solid white;
+    margin-bottom: 50px; 
+  }
+
+  #botaoSubmeter:hover{
+    background-color: white;
+    color:black;
+    font-weight: bolder;
+  }
+
+  
+  .contactos h1 {
+    color: white;
+    text-align: center;
+    font-size: 4.5rem; 
+    margin-top: 2.5%;
+    font-weight: 100;
+  }
+
+  /*------------------------------------------------------------*/
+  /* Redes Sociais */
+  /*------------------------------------------------------------*/
+
+  .redesSociais {
+    height: 150px;
+    background-color: white;
+    display: grid;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 250px;
+    position: relative;
+    color: black;
+  }
+  
+  .redesSociais h1 {
+    /*color: white;*/
+    text-align: center;
+    font-size: 75px;
+    margin-top: 2.5%;
+    font-weight: 100;
+  }
+
+.redesDisponiveis { display: flex; 
+  flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   height: 75px;
+   width: 200px;
+   margin-bottom: 40%;
+   background-color: white;
+   gap: 50px; 
+  }
+
+#instagram{
+  background-color: green;
+  height: 75px; /* Set the height as per your preference */
+  width: 62px;
+  background-image: url(instagramBW.jpg);
+  background-position:top;
+  background-size: cover;
+  
+}
+
+#facebook{
+  height: 75px; /* Set the height as per your preference */
+  width: 68px;
+  background-image: url(facebookBW.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#spotify{
+  background-color: green;
+  height: 75px; /* Set the height as per your preference */
+  width: 90px;
+  background-image: url(spotifyBW.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#youtube{
+
+  height: 75px; /* Set the height as per your preference */
+  width: 80px;
+  background-image: url(youtubeBW.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+  /*------------------------------------------------------------*/
+  /* AJUSTAR PARA TELEMOVEL */
+  /*------------------------------------------------------------*/
+
+
+
+
+/* Styles for desktop and larger screens */
+@media screen and (min-width: 768px) {
+
+  /* The code you shared for desktop screens goes here */
+
+}
+
+/* Styles for mobile screens */
+@media screen and (max-width: 767px) {
+
+
+  html, body{
+    overflow-x: hidden;
+  }
+
+  .navbar-container{
+    flex-direction: row;
+    height: 100%;
+    margin-left: 10%;
+  }
+
+  .links{
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .dropdown-performer{
+    display: none;
+  }
+
+  .dropdown-aulas{
+    display: none;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .sobreSection{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .gridSobre{
+    display: flex;
+  }
+  #imagemInicial{
+    align-items: center;
+    display: none;
+  }
+
+  #textoInfoCurso{
+    color: black;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    font-size: 15px;
+    margin-top: -10%;
+  }
+
+  .gridSobre{
+    width: 50%;
+    margin-left: 24%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #perfomanceTitulo{
+    font-size: 200%;
+  }
+
+  #textoEventos{
+    font-size: 100%;
+  }
+
+  ul li{
+    line-height: 30px;
+  }
+
+  #textoDisc{
+    width: 100%;
+    color: white;
+  }
+
+  #discografiaTitulo{
+    color: black;
+    
+    font-size: 40px;
+  }
+  .aHref{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 55px;
+    text-align: center;
+  }
+
+  .discDisc{
+    width: 100%;
+    transition: none;
+  }
+
+
+
+  .fotos-videos {
+    height: 100%;
+    background-color: black;
+    display: grid;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    color: white;
+
+  }
+  
+  .fotos-videos h1 {
+    text-align: center;
+    font-size: 75px;
+    font-weight: 100;
+    margin-top: 0;
+  }
+  
+  .sobre {
+    background-color: black;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  .image-box {
+    width: 90%; 
+    height: auto;
+    margin: 0 20px;
+    box-shadow: 0px 0px 0px 0px white;
+    margin-bottom: 100px;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .image-box1 {
+    width: 90%;
+    height: auto;
+    margin: 0 20px;
+    box-shadow: 5px 10px 15px black;
+    margin-bottom: 100px;
+  }
+
+
+
+.contactosFormContainer {
+  height: auto;
+  margin-left: 10%;
+}
+
+input {
+  width: 100%;
+  max-width: 300px; 
+  margin: 5px 0; 
+  font-size: 16px; 
+}
+
+#boxMessage {
+  width: 95%;
+  max-width: 300px; 
+  margin: 15px 0;
+  text-align: left;
+  line-height: 1.5;
+  margin-left: 0; 
+}
+
+#botaoSubmeter {
+  width: 50%; 
+  max-width: 300px; 
+  margin: 20px 0; 
+  margin-left: 70px; 
+  margin-top: 30px;
+}
+
+.contactos h1 {
+  font-size: 300%;
+}
+
+
+
+.redesSociais {
+  height: 100%;
+  background-color: white;
+  display: grid;
+  box-sizing: border-box;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  color: black;
+  margin-top: -10px;
+}
+
+.redesSociais h1 {
+  text-align: center;
+  font-size: 75px;
+  margin-top: 2.5%;
+  font-weight: 100;
+}
+
+
+#instagram{
+  background-color: green;
+  height: 65px; /* Set the height as per your preference */
+  width: 60px;
+  background-image: url(instagramBW.jpg);
+  background-position:top;
+  background-size: cover;
+  
+}
+
+#facebook{
+  height: 65px; /* Set the height as per your preference */
+  width: 60px;
+  background-image: url(facebookBW.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#spotify{
+  background-color: green;
+  height: 65px; /* Set the height as per your preference */
+  width: 60px;
+  background-image: url(spotifyBW.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#youtube{
+
+  height: 70px; /* Set the height as per your preference */
+  width: 67px;
+  background-image: url(youtubeBW.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+}
+
