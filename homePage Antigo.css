@@ -1,0 +1,496 @@
+/*----------------------------------*/
+/*--------------Font-------------*/
+/*----------------------------------*/
+
+@font-face {
+  font-family: 'customFont1'; /*a name to be used later*/
+  src: url('YsabeauInfant-Thin.ttf'); /*URL to font*/
+}
+
+
+
+
+/*----------------------------------*/
+/*--------------Nav-Bar-------------*/
+/*----------------------------------*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: 100px;
+    z-index: 100;
+    /*box-shadow: 0px 5px 20px black;*/
+    font-size: 20px;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: black;
+    font-family: customFont1;
+  }
+
+  .reveal{
+    transform: translateY(150px);
+    opacity: 0;
+    position: relative;
+    transition: all 2s ease;
+  }
+
+  
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .links {
+    display: flex;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+
+  .capa-inicial {
+    
+    height: 600px;
+    width: 100%;
+    background-color: blue;
+    display:flex;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    
+  }
+
+
+  #backgroundPersonImage {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .capa-inicial h1 {
+    z-index: 1;
+    position: absolute;
+  }
+
+  .separador-1 {
+    height: 10px;
+    background-color: white;
+    display:flex;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  /*------------------------------------------------------------*/
+  /* BIOGRAFIA */
+  /*------------------------------------------------------------*/
+
+
+
+  .biografia {
+    height: 900px;
+    background-color: black;
+    display: grid;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 100px;
+  }
+  
+  .biografia h1 {
+    color: white;
+    text-align: center;
+    font-size: 75px;
+    margin-top: 2.5%;
+    font-weight: 100;
+  }
+  
+  .biografia p {
+    margin-top: 100px; /* Add this property to create space between h1 and p */
+    text-align: justify;
+    overflow: hidden;
+    width: 550px;
+    font-size: 19px;
+    color: white;
+    margin-bottom: 12.5%;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  #frase1{
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  #autoresQuotes{
+    font-style: normal;
+    font-weight: 100;
+  }
+
+  #h2 {
+    color: white;
+    margin-top: -12%;
+    font-size: 60px;
+    font-weight:lighter;
+  }
+
+  #h3 {
+    color: white;
+    margin-top: -12%;
+    font-size: 75px;
+  }
+
+
+
+/*------------------------------------------------------------*/
+  /* AULAS */
+  /*------------------------------------------------------------*/
+
+
+  .aulas-shows {
+    height: 900px;
+    background-color: black;
+    display: grid;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .aulas-shows h1{
+    color: white;
+    text-align: center;
+    font-size: 75px;
+    font-weight: 100;
+    margin-top: -0%;
+  }
+
+  .cards-aulas{
+    margin-left: 110px;
+  }
+
+  .aulas-individuais {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 100px;
+    height: 600px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+    background-size: auto 45%;
+    filter: url('');
+    box-shadow: 0px 0px white;
+  }
+
+  .aulas-grupo {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 100px;
+    height: 600px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+    background-size: auto 45%;
+    filter: url('');
+    box-shadow: 0px 0px white;
+  }
+
+  .workshops {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 100px;
+    height: 600px;
+    width: 350px;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+    background-size: auto 45%;
+    filter: url('');
+    box-shadow: 0px 0px white;
+  }
+  
+
+  .aulas-individuais::before,
+  .aulas-grupo::before,
+  .workshops::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 39%; /* Set the height of the top section to 30% */
+    width: 100%;
+    z-index: -1;
+    
+    
+  }
+
+  .aulas-individuais::before{
+    background-image: url('ImageAulaPrivada.jpg'); /* Add the image URL as the background */
+    background-size: cover; /* Adjust the background size */
+    height: 270px; /* Adjust the height of your circular image */
+  }
+
+  .aulas-individuais::after{
+    content: "AULAS DE GRUPO";
+    position: absolute;
+    top: 50.5%; /* Adjust position as needed */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px; /* Adjust font size as needed */
+    color: black; /* Adjust text color as needed */
+  }
+
+  .aulas-grupo::before{
+    background-image: url('https://www.grossepointemusicacademy.com/wp-content/uploads/2022/11/Screen-Shot-2022-11-17-at-12.44.25-PM.png'); /* Add the image URL as the background */
+    background-size: cover; /* Adjust the background size */
+    height: 270px; /* Adjust the height of your circular image */
+  }
+
+  .aulas-grupo::after{
+    content: "AULAS DE GRUPO";
+    position: absolute;
+    top: 50.5%; /* Adjust position as needed */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px; /* Adjust font size as needed */
+    color: black; /* Adjust text color as needed */
+  }
+
+  .workshops::before{
+    background-image: url('ImageAulaPrivada.jpg'); /* Add the image URL as the background */
+    background-size: cover; /* Adjust the background size */
+    height: 270px; /* Adjust the height of your circular image */
+  }
+
+  .workshops::after{
+    content: "AULAS DE GRUPO";
+    position: absolute;
+    top: 50.5%; /* Adjust position as needed */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px; /* Adjust font size as needed */
+    color: black; /* Adjust text color as needed */
+  }
+
+  .bullet-points{
+    margin-top: 110%;
+    color: black;
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: 300px;
+  }
+
+.aulas-individuais,
+.aulas-grupo,
+.workshops {
+  transition: transform 0.3s ease,  box-shadow 0.3s ease;
+}
+
+.aulas-individuais:hover,
+.aulas-grupo:hover,
+.workshops:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px white;
+}
+
+
+  /*------------------------------------------------------------*/
+  /* FOTOS */
+  /*------------------------------------------------------------*/
+  .fotos-videos {
+    height: 800px;
+    background-color: white;
+    display: grid;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .fotos-videos h1 {
+    color: black;
+    text-align: center;
+    font-size: 75px;
+    font-weight: 100;
+    margin-top: -0%;
+  }
+
+  .sobre{
+    background-color: black;
+  }
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  .image-box {
+    width: 500px;
+    height: 500px;
+    margin: 0 20px;
+    box-shadow: 5px 10px 15px black;
+    margin-bottom: 100px;
+    
+    
+  }
+
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image fills the box while maintaining its aspect ratio */
+  }
+
+
+  .image-box1 {
+    width: 500px;
+    height: 500px;
+    margin: 0 20px;
+    box-shadow: 5px 10px 15px black;
+    margin-bottom: 100px;
+  }
+
+
+  .image-box1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image fills the box while maintaining its aspect ratio */
+    top: 10px; /* Move the image 10px down from the top */
+  }
+
+  .image-box1::before {
+    content: ""; /* Required for pseudo-elements */
+    display: block;
+    position: absolute;
+    top: 10px; /* Move the background image 10px down from the top */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('path/to/your/image.jpg'); /* Replace 'path/to/your/image.jpg' with your image URL */
+    background-size: cover;
+    background-position: center; /* You can adjust this if you want a different background position */
+    z-index: -1; /* Ensure the background stays behind the content */
+  }
+  
+  .arrow {
+    width: 50px;
+    height: 50px;
+    color: red;
+    background-color: white; /*ARRANJAR ESTES BOTOES*/
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+/*=============================*/
+/* ===== FORM DE CONTACTOS ====*/
+/*=============================*/
+
+  .contactosFormContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    height: 500px; 
+  }
+  
+  input {
+    width: 50%; 
+    padding: 10px;
+    height: 40px;
+    font-size: 1rem; 
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    font-family: customFont1;
+    
+  }
+  
+  #boxMessage {
+    width: 250px;
+    padding: 10px;
+    height: 190px;
+    font-size: 1rem; 
+    text-align: center;
+    margin-top: -122px;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    font-family: customFont1;
+    justify-content: left;
+    margin-left: 190px;
+    font-size: 20px;
+    line-height: 20px;
+    
+  }
+  
+
+  #botaoSubmeter {
+    color: red;
+    width: 100px;
+    height: 30px;
+    margin-left: 320px;
+    margin-bottom: -200px;
+  }
+
+
+  
+  .contactos h1 {
+    color: white;
+    text-align: center;
+    font-size: 4.5rem; 
+    margin-top: 2.5%;
+    font-weight: 100;
+  }

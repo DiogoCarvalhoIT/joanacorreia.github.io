@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="homePageAntigo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="homePage.js"></script>
+</head>
+<body>
+    
+    <!---------------------------------->
+    <!--------------Nav-Bar------------->
+    <!---------------------------------->    
+    
+    <nav>
+        <div class="navbar-container">
+          <div class="logo">JOANA CORREIA</div>
+          <div class="links">
+            <a href="#capa-inicial">Início</a>
+            <a href="#biografia">Sobre</a>
+            <a href="#fotos-videos">Fotos</a>
+            <a href="#">Aulas</a>
+            <a href="#">Contactos</a>
+          </div>
+        </div>
+      </nav>
+
+    <!---------------------------------->
+    <!---------- Capa Inicial ---------->
+    <!----------------------------------> 
+      <div class="container"> 
+        <div id="capa-inicial" class="capa-inicial">
+          <h1> </h1>
+          <img id="backgroundPersonImage" src="mainpagePhoto1.jpg" alt="Image description">
+        </div>
+    </div>
+    <!---------------------------------->
+    <!----------- Separador 1 ---------->
+    <!----------------------------------> 
+
+    <!--<div class="container"> 
+      <div class="separador-1">
+        <img id="backgroundPersonImage" src="ytt0ar1p.bmp" alt="Image description">
+     </div>
+    </div>-->
+    <!---------------------------------->
+    <!----------- Biografia ------------>
+    <!----------------------------------> 
+    <div class="sobre">  
+      <div class="container reveal"> 
+        <div id="biografia" class="biografia">
+         <h1> S O B R E</h1>
+          <p class="texto"> Joana Correia é violoncelista e professora de violoncelo e orquestra.
+            Nascida em Lisboa, mudou-se muito cedo para os Açores, iniciando os estudos musicais no Conservatório de Ponta Delgada. Aos 15 anos mudou-se para o norte do país e concluiu o ensino secundário na Escola Profissional do Vale do Ave (ARTAVE).
+            Em 2012 concluiu a licenciatura em música na Escola Superior de Música de Lisboa na classe da professora Clélia Vital. Durante o ano 2012/13, esteve a estudar no Lemmensinstituut, em Leuven (Bélgica), na classe do professor Geert de Bièvre. Nesse mesmo ano, pertenceu à Orquestra Musiek Frascati. 
+            Em 2018 concluiu o mestrado em ensino da música, na Escola Superior de música de Lisboa na classe do professor Paulo Gaio Lima e sob a orientação da professora Irene Lima. 
+            Colaborou com diversas orquestras nomeadamente a Orquestra do Algarve, Orquestra Sinfónica de Cascais, Sinfonietta de Lisboa, entre outras. É membro fundador do grupo Lisboa Duo, do quinteto de cordas com acordeão Velvet Quintet e pertence ao grupo CANTUSd’Alma. Colaborou com diversos artistas de outros contextos musicais como Júlio Pereira, Sam the Kid, Orelha Negra e Fábia Maia.
+            Atualmente leciona violoncelo e orquestra de cordas no Conservatório de Música D. Dinis.
+          </p>
+          <p id="frase1">
+            “When I started learning the cello, I fell in love with the instrument because it seemed like a voice - my voice.” <br><span id="autoresQuotes">Mstislav Rostropovich (1927-2007)</span> 
+          </p>
+        </div>
+      </div>
+    </div>  
+    <!---------------------------------->
+    <!--------- Fotos & Videos --------->
+    <!----------------------------------> 
+
+
+    <div class="container reveal"> 
+      <div id="fotos-videos" class="fotos-videos">
+        <h1> F O T O S</h1>
+        <div class="image-container">
+          <div class="image-box1">
+            <img src="ImagemDisplay1.jpeg" alt="Image 1">
+          </div>
+          <div class="image-box">
+            <img src="ImagemDisplay2.jpeg" alt="Image 2">
+          </div>
+          <div class="image-box">
+            <img src="ImagemDisplay3.jpeg" alt="Image 3">
+          </div>
+        </div>
+      </div>    
+    </div>  
+
+    
+    
+    <!---------------------------------->
+    <!--------- Aulas & Shows ---------->
+    <!----------------------------------> 
+
+    <div class="container reveal"> 
+      <div class="aulas-shows">
+        <h1> A U L A S </h1>
+          <div class="cards-aulas">
+              <div class="aulas-individuais">
+               
+              </div>
+              <div class="aulas-grupo">
+                <ul class="bullet-points">
+                  <li>1</li>
+                  <li>2</li>
+                </ul>
+              </div>
+              <div class="workshops">
+                
+              </div>
+          </div>
+      </div> 
+    </div>
+    <!---------------------------------->
+    <!--------- Contactos ---------->
+    <!----------------------------------> 
+    <div class="contactos-container">
+      <div class="container reveal">
+        <div class="contactos">
+        <h1> C O N T A C T O S</h1>
+      <div class="contactosFormContainer">
+        <form action="https://formsubmit.co/dfb1e8cc8eab6cbcc0a70a167a1cdc05" method="POST">
+          <input type="text" name="Name" placeholder="NOME" class="input-box"  required>
+          <input type="email" name="Email" placeholder="E-MAIL" class="input-box"required>
+          <input type="phone" name="Phone" placeholder="TELEFONE" class="input-box">
+          <div id="boxMessage" class="message-box"><textarea name="Message" placeholder="Escreva aqui a mensagem que pretende enviar..." id="boxMessage" required></textarea></div>
+          <button type="sumbit" id="botaoSubmeter">SUBMETER</button>
+      </form>
+      </div> 
+    </div>
+    </div>
+  </div>
+
+
+    <script src="homePage.js"></script>
+    <script>
+      initializeSmoothScroll();
+      revealContent();
+      scrollLeft();
+      scrollRight();
+      updateImages();
+    </script>
+
+</body>
+</html>
