@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="inicio">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Document</title>
+    <title>Joana Correia</title>
+    <link rel="icon" type="image/png" href="celloIcon.jpg">
 </head>
 <body>
     <div class="container">
@@ -16,8 +18,8 @@
             <div class="texto"> “I think one of the great things about being a musician is that you never stop learning.” <br> Yo-Yo Ma </div>
             <div class="buttonClick">
                 <div class="buttons">
-                    <a href="performerPage.html#" class="button">ATUAÇÕES</a>
-                    <a href="homePage.html#" class="button">AULAS</a>
+                    <a href="performerPage2.html" onclick="mudar()"  id="perfomerLink" class="button">ATUAÇÕES</a>
+                    <a href="homePage.html" class="button">AULAS</a>
                 </div>
             </div>
         </div>
@@ -25,7 +27,9 @@
     </div> 
 
     <script>
-
+        function mudar(){
+            window.location.href = 'performerPage.html';
+        }
     </script>
 </body>
 </html>

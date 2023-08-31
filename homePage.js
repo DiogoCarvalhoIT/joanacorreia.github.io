@@ -28,7 +28,7 @@
     elements.forEach(function(element) {
       var windowHeight = window.innerHeight;
       var revealTop = element.getBoundingClientRect().top;
-      var revealPoint = 150;
+      var revealPoint = 100;
   
       if (revealTop < windowHeight - revealPoint) {
         element.classList.add('active');
