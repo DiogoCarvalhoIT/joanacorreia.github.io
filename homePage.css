@@ -16,7 +16,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color: black;
+    background-color: #7B91A0;
     height: 100px;
     z-index: 100;
     /*box-shadow: 0px 5px 20px black;*/
@@ -27,7 +27,7 @@ nav {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-color: black;
+    background-color: #7B91A0;
     font-family: customFont1;
   }
 
@@ -118,7 +118,7 @@ nav {
     transition: opacity 0.5s ease, transform 0.5s ease; /* Add this line */
     flex-direction:column; /* Add this line */
     align-items: flex-start; /* Add this line */
-    background-color: black;
+    background-color: #7B91A0;
   }
   
   .dropdown-performer.active {
@@ -156,7 +156,7 @@ nav {
     transition: opacity 0.5s ease, transform 0.5s ease; /* Add this line */
     flex-direction:column; /* Add this line */
     align-items: flex-start; /* Add this line */
-    background-color: black;
+    background-color: #7B91A0;
   }
   
   .dropdown-aulas.active {
@@ -228,7 +228,7 @@ nav {
 }
 
 #imagemInicial{
-  background-image: url('ImagemDisplay2.jpeg');
+  background-image: url('mainpagePhoto1.jpg');
   background-size: cover; 
   background-position: center; 
   box-shadow: 0px 0px 20px 5px black;
@@ -256,7 +256,7 @@ nav {
 
   .biografia {
     height: 670px;
-    background-color: black;
+    background-color: #7B91A0;
     display: grid;
     box-sizing: border-box;
     padding: 10px;
@@ -267,7 +267,7 @@ nav {
   }
   
   .biografia h1 {
-    color: white;
+    color: black;
     text-align: center;
     font-size: 75px;
     margin-top: 3%;
@@ -279,7 +279,7 @@ nav {
     overflow: hidden;
     width: 550px;
     font-size: 19px;
-    color: white;
+    color: black;
     margin-bottom: 6.5%;
     line-height: 1.5;
     margin-left: auto;
@@ -346,6 +346,64 @@ nav {
   font-weight: bold;
 }
 
+  /*------------------------------------------------------------*/
+  /* Precario */
+  /*------------------------------------------------------------*/
+
+  .precario {
+    height: 400px;
+    background-color: white;
+    display: grid;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /*margin-top: 100px;*/
+    position: relative;
+    color: black;
+  }
+  
+  .precario h1 {
+    /*color: white;*/
+    text-align: center;
+    font-size: 75px;
+    margin-top: 2.5%;
+    font-weight: 100;
+  }
+
+  .opcoesAulas { 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcoesAulas > div {
+  flex: 1;
+  height: 150px; /* Set the height as per your preference */
+  width: 300px;
+  margin-bottom: 40%;
+}
+
+#curso{
+  border-right: solid black;
+  border-right-width: 1px;
+}
+
+#aula{
+  border-left: solid black;
+  border-left-width: 1px;
+}
+
+#textoOpcoes{
+  font-size: 19px;
+}
+
+#tituloOpcoes{
+  font-size: 35px;
+  font-weight: bold;
+}
 
   /*------------------------------------------------------------*/
   /* REGULAMENTO */
@@ -353,7 +411,7 @@ nav {
 
   .regulamento {
     height: 850px;
-    background-color: black;
+    background-color: #7B91A0;
     display: grid;
     box-sizing: border-box;
     padding: 10px;
@@ -364,7 +422,7 @@ nav {
   }
   
   .regulamento h1 {
-    color: white;
+    color: black;
     text-align: center;
     font-size: 75px;
     margin-top: 3%;
@@ -376,7 +434,7 @@ nav {
     overflow: hidden;
     width: 550px;
     font-size: 19px;
-    color: white;
+    color: black;
     margin-bottom: 5.5%;
     line-height: 1.5;
     margin-left: auto;
@@ -433,11 +491,11 @@ nav {
   
 
   #botaoSubmeter {
-    color: white;
+    color: black;
     width: 150px;
     height: 50px;
     margin-left: 300px;
-    background-color: black;
+    background-color: white;
     font-family: customFont1;
     border: 2px solid white;
     margin-bottom: 50px; 
@@ -661,7 +719,7 @@ nav {
 
   .contactosFormContainer {
     height: auto;
-    margin-left: 5%;
+    margin-left: 10%;
   }
   
   input {

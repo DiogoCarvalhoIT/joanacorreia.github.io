@@ -13,7 +13,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color: black;
+    background-color: #7B91A0;
     height: 100px;
     z-index: 100;
     /*box-shadow: 0px 5px 20px black;*/
@@ -24,7 +24,7 @@ nav {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-color: black;
+    background-color: #7B91A0;
     font-family: customFont1;
   }
 
@@ -33,12 +33,14 @@ nav {
     opacity: 0;
     position: relative;
     transition: all 2s ease;
+    background-color: #7B91A0;
   }
 
   
   .reveal.active{
     transform: translateY(0px);
     opacity: 1;
+    background-color: #7B91A0;
   }
 
   .navbar-container {
@@ -49,6 +51,7 @@ nav {
     align-items: center;
     height: 100%;
     padding: 0 20px;
+    
   }
   
   .logo {
@@ -71,6 +74,7 @@ nav {
   
   .links a:hover {
     text-decoration: underline;
+    
   }
 
   .capa-inicial {
@@ -119,7 +123,7 @@ nav {
     transition: opacity 0.5s ease, transform 0.5s ease; /* Add this line */
     flex-direction:column; /* Add this line */
     align-items: flex-start; /* Add this line */
-    background-color: black;
+    background-color: #7B91A0;
   }
   
   .dropdown-performer.active {
@@ -159,7 +163,7 @@ nav {
     transition: opacity 0.5s ease, transform 0.5s ease; /* Add this line */
     flex-direction:column; /* Add this line */
     align-items: flex-start; /* Add this line */
-    background-color: black;
+    background-color: #7B91A0;
   }
   
   .dropdown-aulas.active {
@@ -256,7 +260,7 @@ nav {
 
   .discEvents {
     height: 100%;
-    background-color: black;
+    background-color: #7B91A0;
     display: grid;
     box-sizing: border-box;
     padding: 10px;
@@ -265,7 +269,7 @@ nav {
     width: 100vw;
     /*margin-top: 100px;*/
     position: relative;
-    color: white;
+    color: black;
   }
   
   .discEvents h1 {
@@ -274,6 +278,7 @@ nav {
     font-size: 75px;
     margin-top: 1.5%;
     font-weight: 100;
+    color: black;
   }
 
   /*.gridDiscEvents { 
@@ -312,8 +317,12 @@ nav {
     width: 70%;
     margin-left: 10%;
     align-items: center;
-    
     align-content: center;
+    color: black;
+}
+
+ul li{
+  margin-bottom: 10px;
 }
 
 .textoEventos{
@@ -358,6 +367,7 @@ nav {
     font-size: 75px;
     margin-top: 1.5%;
     font-weight: 100;
+    /*margin-bottom: -100px;*/
   }
 
 
@@ -386,38 +396,42 @@ nav {
   text-decoration:underline;
 }
 
+.red-text{
+  color: red;
+  font-size: 2rem;
+  margin-top: -500px;
+}
+
+
+
 
   /*------------------------------------------------------------*/
   /* FOTOS */
   /*------------------------------------------------------------*/
 
   .fotos-videos {
-    height: 1200px;
-    background-color: black;
+    background-color: #7B91A0;
     display: grid;
     box-sizing: border-box;
     padding: 10px;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     width: 100vw;
-    color: white;
+    color: black;
   }
-
+  
   .fotos-videos h1 {
     text-align: center;
     font-size: 75px;
     font-weight: 100;
-    margin-top: -0%;
+    margin-top: 0;
   }
-
-  .sobre{
-    background-color: black;
-  }
-
+  
   .image-container {
     display: flex;
-    align-items: center;
-    margin-left: 3%;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
   }
   
   .image-box {
@@ -427,14 +441,13 @@ nav {
     box-shadow: 0px 0px 10px 1px white;
     margin-bottom: 100px;
   }
-
+  
   .image-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This ensures the image fills the box while maintaining its aspect ratio */
+    object-fit: cover;
   }
-
-
+  
   .image-box1 {
     width: 500px;
     height: 500px;
@@ -492,11 +505,11 @@ nav {
   
 
   #botaoSubmeter {
-    color: white;
+    color: black;
     width: 150px;
     height: 50px;
     margin-left: 300px;
-    background-color: black;
+    background-color: white;
     font-family: customFont1;
     border: 2px solid white;
     margin-bottom: 50px; 
@@ -643,6 +656,10 @@ nav {
     align-content: center;
   }
 
+  .sobreSection h1{
+    font-size: 3.4rem;
+  }
+
   .gridSobre{
     display: flex;
   }
@@ -679,6 +696,7 @@ nav {
 
   ul li{
     line-height: 30px;
+    margin-bottom: 0.1rem;
   }
 
   #textoDisc{
@@ -739,7 +757,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-left: 3%;
+    margin-left: 1%;
   }
   
   .image-box {
@@ -768,7 +786,7 @@ nav {
 
 .contactosFormContainer {
   height: auto;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 input {
