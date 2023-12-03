@@ -730,7 +730,7 @@ ul li{
 
   .fotos-videos {
     height: 100%;
-    background-color: black;
+    background-color: #7B91A0;
     display: grid;
     box-sizing: border-box;
     padding: 10px;
@@ -749,7 +749,7 @@ ul li{
   }
   
   .sobre {
-    background-color: black;
+    background-color: #7B91A0;
   }
   
   .image-container {
