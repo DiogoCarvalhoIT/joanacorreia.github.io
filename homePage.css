@@ -610,6 +610,10 @@ nav {
     margin-left: 2%;
   }
 
+  nav {
+    margin-left: -1rem;
+  }
+
   .links{
     flex-direction: row;
     gap: 40px;
@@ -719,7 +723,7 @@ nav {
 
   .contactosFormContainer {
     height: auto;
-    margin-left: 7%;
+    margin-left: 4%;
   }
   
   input {
